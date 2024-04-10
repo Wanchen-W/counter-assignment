@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
-import Counter from '../components/Counter.js'; // Adjust the path accordingly
+import Counter from '../components/Counter.js'; 
 
 let component;
 
@@ -16,7 +16,7 @@ test('renders counter message', () => {
 
 test('should render initial count with value of 0', () => {
     const { getByTestId } = component;
-    const countValue = getByTestId('count'); // Look for element with data-testid="count"
+    const countValue = getByTestId('count'); 
     expect(countValue.textContent).toBe('0');
 });
 
